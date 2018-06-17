@@ -1,0 +1,1 @@
+CREATE TABLE `agenda`.`afspraken` ( `ID` INT NOT NULL , `datum_tijd` VARCHAR(256) NOT NULL , `beschrijving` VARCHAR(256) NOT NULL , PRIMARY KEY (`ID`)) ENGINE = InnoDB;
