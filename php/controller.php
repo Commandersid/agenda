@@ -27,10 +27,15 @@ function leesAfspraken() {
     $sql = "SELECT datum_tijd, beschrijving FROM afspraken";
     $result = $conn->query($sql);
 
+    echo "<table class='table table-hover'>";
+    echo "<thead><tr>" . "<th>Datum/tijd</th>" . "<th>Afspraak</th>" . "</tr></thead>";
+    echo "<tbody>";
     if ($result->num_rows > 0) {
         while($row = $result->fetch_assoc()) {
-            echo $row['datum_tijd'] . " -- " . $row['beschrijving'] . "<br>";
+            echo "<tr><td>" . $row['datum_tijd'] . "</td><td>" . $row['beschrijving'] . "</td></tr>";
         }
+    echo "</tbody>";
+    echo "</table>";
     } else {
         echo "Geen resultaten";
     }

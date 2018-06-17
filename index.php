@@ -18,6 +18,9 @@
 </head>
 <body>
     <div class="container-fluid">
+        <div class="head page-header">
+            <h1>Agenda</h1>
+        </div>
         <form action="php/controller.php" method="post">
             <div class="form-group">
                 <label>Datum en tijd</label>
