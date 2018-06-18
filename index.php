@@ -18,7 +18,7 @@
 </head>
 <body>
     <div class="container-fluid">
-        <div class="head page-header">
+        <div class="main-header page-header">
             <h1>Agenda</h1>
         </div>
         <form action="php/controller.php" method="post">

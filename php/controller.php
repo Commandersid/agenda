@@ -15,7 +15,8 @@ if(isset($_POST['submit'])) {
             echo "ERROR!: . $sql . <br> . $conn->error";
         }
     } else {
-        echo "Vul alle velden in en klik op toevoegen!<br>";
+        // echo "Vul alle velden in en klik op toevoegen!<br>";
+        header('location: ../index.php');
     }
 } else {
     // Submit is NOT clicked
